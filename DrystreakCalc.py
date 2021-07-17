@@ -8,7 +8,6 @@ def drystreak(chances,droprate,runs):
     count = 0; dry = 0; drymax = 0; dryav = 0; dryruns = 0
 
     for i in range(runs):
-        # can I do this in a "for j in range(x,y,z):"? I dont think so?
         for j in range(chances):
             drops[j] = random.randint(1,droprate)
 
