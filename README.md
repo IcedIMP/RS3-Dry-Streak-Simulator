@@ -1,4 +1,4 @@
-# RS3-Elite-Dungeon-Dry-Streaks
+# RS3-Dry-Streak-Simulator
 
 Python script for use in simulating likely dry streak/maximum dry streak
 one is likely to experience when farming a boss in RS (specifically RS3 
