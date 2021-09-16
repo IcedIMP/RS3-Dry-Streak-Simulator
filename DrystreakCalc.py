@@ -1,9 +1,31 @@
+#!/usr/bin/env python3
 
 import random
 import math
 
 # Script to simulate repeated content and the likelihood/size of drystreaks
 def drystreak(chances,droprate,runs):
+
+    '''Simulate a series of Runs for drop rates
+
+    Keyword Arguments:
+
+    chances:  is the number of chances you have 
+              to recieve a drop when you defeat 
+              the boss
+
+    droprate: is the INTEGER chance (one in droprate 
+              (1/droprate)) of the drop. Expected to be 
+              the same rate for each of 'chances' 
+              
+    runs: the number of completions to simulate
+               
+    ie -   at ed2 you have 3 chances at a 1 in 100 
+           droprate item so chances = 3 droprate = 100
+     
+    ed2 -- ed3 solo comment out respectively can add for any other boss
+    '''
+
     drops = [2]*chances
     count = 0; dry = 0; drymax = 0; dryav = 0; dryruns = 0
 
@@ -30,20 +52,9 @@ def drystreak(chances,droprate,runs):
 # set the parameters for the simulation
 def main():
 
-    # runs: the number of completions to simulate
-    #
-    # chances:  is the number of chances you have 
-    #           to recieve a drop when you defeat 
-    #           the boss
-    # droprate: is the INTEGER chance (one in droprate 
-    #           (1/droprate)) of the drop. must be the
-    #            same rate for each of 'chances' 
-    #           
-    # ie -  at ed2 you have 3 chances at a 1 in 100 
-    #       droprate item so chances = 3 droprate = 100
-    # 
-    # ed2 -- ed3 solo comment out respectively can add for any other boss
-    #
+    ''' Runs the drystreak simulation
+    For information on variable meanings see drystreak docstring
+    '''
 
     runs = 1500000
 
