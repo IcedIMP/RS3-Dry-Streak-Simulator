@@ -95,12 +95,9 @@ def main():
     #chances = 1; droprate = 200 #Solak grimoire
     #chances = 1; droprate = math.ceil(1000/23) #Raksha for any boots/unique minus pet (less accurate, faster runtime)
     #chances = 23; droprate = 1000 #Raksha for any of boots or unique minus pet (more accurate, much slower (lower 'runs'))
-    chances = 1; droprate = 540 #Arch-Glacor for frozen core of Leng (Nor confirmed droprate)
+    chances = 1; droprate = 512 #Arch-Glacor for frozen core of Leng (No confirmed droprate, just assumed for now)
 
     drystreak(chances,droprate,runs,printout)
-
-
-   
 
 if __name__ == "__main__":
     main()
