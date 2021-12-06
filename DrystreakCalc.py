@@ -56,7 +56,7 @@ def drystreak(chances,droprate,runs,printout):
     result = count
     return(result)
 
-def multiResult(chances,droprate,runs,trials):
+def multi_result(chances,droprate,runs,trials):
     ''' Simulate a series of runs a specified amount of times
 
     chances:  is the number of chances you have 
